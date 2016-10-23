@@ -1,0 +1,26 @@
+version: '2'
+services:
+  java:
+    build: java/
+  maven:
+    build: maven/
+  git:
+    build: git/
+  jenkins:
+    build: jenkins/
+  sonar:
+    build: sonar/
+  nexus:
+    build: nexus/
+  mongodb:
+    build: mongodb/
+    ports:
+      - "27017:27017"
+  mysql:
+    build: mysql/
+  apache:
+    build: apache/
+  nginx:
+    build: nginx/
+  tomcat:
+    build: tomcat/
